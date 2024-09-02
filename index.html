@@ -67,7 +67,7 @@
                 modal.classList.remove('hidden'); // Rimuove la classe hidden dall'elemento modal
 
                 let yourUrl = document.getElementById('link').value;
-                let finalUrl = 'https://api.qrserver.com/v1/create-qr-code/?data=' + yourUrl + '&amp;format=svg';
+                let finalUrl = 'https://api.qrserver.com/v1/create-qr-code/?data=' + yourUrl + '&amp;format=svg&qzone=1';
                 document.getElementById('qr-wrapper').innerHTML = '<p class="text-sm">sto lavorando...</p>';
                 setTimeout(function(){ document.getElementById('qr-wrapper').innerHTML = '<img src="' + finalUrl +'" alt="" title="" />'; }, 1000); 
             });
